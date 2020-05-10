@@ -1,0 +1,44 @@
+.services {
+    background-color: $color-grey-light;
+    padding-bottom: 10rem;
+
+    &__title {
+        grid-column: center-start / center-end;
+        margin-top: -10rem;
+        position: relative;
+    }
+
+    &__content {
+        grid-column: center-start / center-end;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin-top: 2.5rem;
+        overflow: hidden;
+    }
+
+    &__box {
+        margin: 3rem 1rem;
+        background-color: $color-light;
+        box-shadow: 0 .2rem .4rem #d3d3d3;
+        border-radius: 4px;
+        padding: 4rem;
+        width: 40rem;
+
+        display: grid;
+        justify-items: center;
+        grid-row-gap: 1rem;
+        
+        img {
+            height: 10rem;
+            width: 10rem;
+        }
+    }
+    &__box:hover, &__hover:active {
+        transform: scale(1.03);
+        box-shadow: 0 .3rem .6rem #d3d3d3;
+        transition: all .2s ease;
+    }
+}

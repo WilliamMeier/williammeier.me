@@ -1,0 +1,88 @@
+.about {
+    background-color: $color-primary;
+    overflow: hidden;
+    position: relative;
+
+    background-image: linear-gradient(rgba($color-primary, 0.6), rgba($color-primary, 0.92)), url(/resources/css/img/about.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__bio {
+        grid-column: center-start / col-end 3;
+        justify-self: center;
+        text-align: center;
+        margin-top: -5rem;
+
+        position: relative;
+        padding: 7rem;
+        border-radius: .2rem;
+        overflow: hidden;
+
+        &::after {
+            content: '';;
+            background: inherit; 
+            position: absolute;
+            left: -25px;
+            right: 0;
+            top: -25px;  
+            bottom: 0;
+            box-shadow: inset 0 0 0 200px rgba(255,255,255,0.07);
+            filter: blur(10px);
+        }
+
+        &--title {
+            position: relative;
+        }
+        &--img {
+            img {
+                position: relative;
+                height: 25rem;
+                border: .9rem solid $color-grey-light;
+                border-radius: 50%;
+            }
+        }
+    }
+    &__text {
+        grid-column: col-start 4 / center-end;
+        padding: 0 8rem;
+        margin-top: -5rem;
+        
+        text-align: justify;
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.5;
+
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__skills {
+        margin-top: 5rem;
+        font-weight: 700;
+
+        &--name {
+            display: flex;
+            justify-content: space-between;
+        }
+        &--item {
+            width: 100%;
+            background-color: $color-grey-dark;
+            border-radius: 10rem;
+
+            .progress-bar {
+                padding: .2rem 0;
+                position: relative;
+                background-color: $color-grey-light;
+                border-radius: 10rem;
+            }
+            .html { width: 85%; }
+            .css { width: 80%; }
+            .sass { width: 70%; }
+            .js { width: 55%; }
+        }
+    }
+}

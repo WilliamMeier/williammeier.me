@@ -1,0 +1,56 @@
+.btn  {
+    border-radius: 10rem;
+    padding: 1.5rem 4.5rem;
+    font-size: 1.3rem;
+    letter-spacing: .15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all .3s;
+
+    &__contact:link, &__contact:visited {
+        margin-right: 2.2rem;
+        border: .1rem solid $color-primary;
+        background-color: $color-primary;
+        color: $color-light;
+    }
+    &__more:link, &__more:visited {
+        border: .1rem solid $color-primary;
+        background-color: transparent;
+        color: $color-primary;
+    }
+
+    &__contact:hover, &__contact:active, &__more:hover, &__more:active {
+        border: .1rem solid $color-primary-dark;
+        background-color: $color-primary-dark;
+        color: $color-light;
+    }
+}
+
+.icon {
+    margin: 0 .7rem;
+    border: 1px solid $color-primary;
+    border-radius: 100%;
+    padding: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 5;
+    position: relative;
+
+    transition: all .3s ease-in;
+    
+    svg {
+        height: 2.2rem;
+        width: 2.2rem;
+        display: block;
+        fill: $color-primary;
+    }
+
+    &:hover, &:active {
+        background-color: $color-primary;
+        
+        svg {
+            fill: $color-light;
+        }
+    }
+}

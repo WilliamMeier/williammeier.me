@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Olá! Meu nome é William Meier, sou Desenvolvedor Web Front-End...">
+    
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="resources/img/logo.png">
+    <title>William Meier | Dev Front-End</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="resources/img/logo.png" alt="Logo do site">
+        </a>
+        <ul class="nav">
+            <li class="nav__item">
+                <a href="#header" class="nav__link nav__border">Início</a>
+            </li>
+            <li class="nav__item">
+                <a href="#about" class="nav__link nav__border">Sobre</a>
+            </li>
+            <li class="nav__item">
+                <a href="#services" class="nav__link nav__border">Serviços</a>
+            </li>
+            <li class="nav__item">
+                <a href="#projects" class="nav__link nav__border">Projetos</a>
+            </li>
+            <li class="nav__item">
+                <a href="#contact" class="nav__link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="header container" id="header">
+        <div class="header__text">
+            <h2 class="heading-1">
+                Você quer um site<br>
+                <span class="typer" id="typer-start" data-words="elegante,responsivo,funcional" data-delay="100" data-deleteDelay="1000" data-colors="#5f5f5f" data-cursor-display></span>
+                <span class="cursor" data-owner="typer-start"></span>
+            </h2>
+
+            <div class="header__btn">
+                <a href="#" class="btn btn__contact">Contate-me</a>
+                <a href="#" class="btn btn__more">Saiba mais</a>
+            </div>
+
+            <div class=header__social">
+                <a href="https://www.facebook.com/williammeier01" class="icon" target="_blank" rel="noreferrer noopener">
+                    <svg>
+                        <use xlink:href="resources/img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/williammeier01" class="icon" target="_blank" rel="noreferrer noopener">
+                    <svg>
+                        <use xlink:href="resources/img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/williammeier01" class="icon" target="_blank" rel="noreferrer noopener">
+                    <svg>
+                        <use xlink:href="resources/img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+
+                <a href="https://twitter.com/williammeier01" class="icon" target="_blank" rel="noreferrer noopener">
+                    <svg>
+                        <use xlink:href="resources/img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+
+                <a href="https://github.com/WilliamMeier" class="icon" target="_blank" rel="noreferrer noopener">
+                    <svg>
+                        <use xlink:href="resources/img/sprite.svg#icon-github"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <video class="header__img" autoplay>
+            <source src="/resources/video/web.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+
+        <!-- <figure class="header__img">
+            <img src="/resources/img/hero.png" alt="Imagem hero do site">
+        </figure> -->
+    </section>
+
+    <!-- Section about -->
+    <section class="about container" id="about">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e6f3fb" fill-opacity="1" d="M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,74.7C840,64,960,96,1080,106.7C1200,117,1320,107,1380,101.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        <div class="about__bio">
+            <figure class="about__bio--img">
+                <img src="/resources/img/me.jpg" alt="Minha foto pessoal">
+            </figure>
+            <div class="about-bio--title">
+                <h4 class="heading-3 color-light">Prazer, eu sou</h4>
+                <h3 class="heading-2 color-light">William Meier</h3>
+                <h5 class="heading-5">Desenvolvedor front-End</h5>
+            </div>
+        </div>
+
+        <div class="about__text">
+            <div class="">
+                <p class="color-light">Para começar me apresentando, sou desenvolvedor front-end além de estusiasta de economia e esportes nas horas vagas. 
+                    Sou apaixonado por tecnologia há muito tempo, porém nesse período demorei para encontrar os meus objetivos. 
+                    Isso até descobrir minha grande paixão, o desenvolvimento front-end. </p>
+                <p class="color-light">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem saepe laudantium cumque laboriosam? Itaque cupiditate rerum impedit inventore earum dicta cumque ea tenetur doloremque labore harum, esse hic, dolorum nihil excepturi repellendus. Aliquid sit accusamus consequatur voluptates laudantium, odit mollitia!
+                </p>
+            </div>
+
+            <div class="about__skills color-light">
+                <div class="mt-4">
+                    <div class="about__skills--name">
+                        <div>HTML</div>
+                        <div class="">85%</div>
+                    </div>
+                    <div class="about__skills--item">
+                        <div class="progress-bar html"></div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div class="about__skills--name">
+                        <div>CSS</div>
+                        <div class="">80%</div>
+                    </div>
+                    <div class="about__skills--item">
+                        <div class="progress-bar css"></div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div class="about__skills--name">
+                        <div>Sass</div>
+                        <div class="">75%</div>
+                    </div>
+                    <div class="about__skills--item">
+                        <div class="progress-bar sass"></div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <div class="about__skills--name">
+                        <div>Java Script</div>
+                        <div class="">55%</div>
+                    </div>
+                    <div class="about__skills--item">
+                        <div class="progress-bar js"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <svg class="wave wave__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5f5f5" fill-opacity="1" d="M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,74.7C840,64,960,96,1080,106.7C1200,117,1320,107,1380,101.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </section>
+
+    <!-- Section Services -->
+    <section class="services container" id="services">
+        <h1 class="services__title heading-2">Serviços</h1>
+
+        <div class="services__content">
+            <div class="services__box">
+                <div class="services__box--icon">
+                    <img src="/resources/img/code.svg" alt="">
+                </div>
+                <div class="services__box--title heading-4">Criação de Sites</div>
+                <div class="services__box--description heading-5">
+                    Criação de sites institucionais para você divulgar a sua marca ou empresa.
+                </div>
+            </div>
+
+            <div class="services__box">
+                <div class="services__box--icon">
+                    <img src="/resources/img/mobile.svg" alt="">
+                </div>
+                <div class="services__box--title heading-4">Para qualquer Dispositivo</div>
+                <div class="services__box--description heading-5">
+                    Mobile, tablet, desktop? O seu site desenvovido de forma responsiva para qualquer dispositivo. 
+                </div>
+            </div>
+
+            <div class="services__box">
+                <div class="services__box--icon">
+                    <img src="/resources/img/design.svg" alt="">
+                </div>
+                <div class="services__box--title heading-4">Design Moderno</div>
+                <div class="services__box--description heading-5">
+                    Seu site com um visual limpo, elegante e moderno.
+                </div>
+            </div>
+
+            <div class="services__box">
+                <div class="services__box--icon">
+                    <img src="/resources/img/ads.svg" alt="">
+                </div>
+                <div class="services__box--title heading-4">Marketing Digital</div>
+                <div class="services__box--description heading-5">
+                    Seu site no topo das pesquisas. Gerenciamento e divulgação do seu site com Google ADS. 
+                </div>
+            </div>
+
+            <div class="services__box">
+                <div class="services__box--icon">
+                    <img src="/resources/img/analitics.svg" alt="">
+                </div>
+                <div class="services__box--title heading-4">Estatísticas do seu Site</div>
+                <div class="services__box--description heading-5">
+                    Tenha em mãos estatísticas dos visitantes do seu site com o Google Analytics.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Portfólio -->
+    <section class="projects container" id="projects">
+        <h1 class="projects__title heading-2">Projetos</h1>
+        <div class="projects__content">
+            <div class="projects__content--1">
+
+            </div>
+            <div class="projects__content--2">
+                
+            </div>
+            <div class="projects__content--3">
+                
+            </div>
+            <div class="projects__content--4">
+                
+            </div>
+            <div class="projects__content--5">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="vendor/js/jquery-3.5.0.min.js"></script>
+    <script async src="vendor/js/type.js"></script>>
+    <script src="vendor/js/jquery.waypoints.min.js"></script>
+
+    <script src="resources/js/script.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164770074-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-164770074-1');
+    </script>
+
+</body>
+</html>

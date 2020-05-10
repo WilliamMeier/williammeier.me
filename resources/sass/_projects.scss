@@ -1,0 +1,19 @@
+.projects {
+    grid-column: center-start / center-end;
+    background-color: $color-light;
+
+    &__title {
+        grid-column: center-start / center-end;
+        margin-top: 10rem;
+        position: relative;
+    }
+
+    &__content {
+        margin-top: 8rem;
+        grid-column: center-start / center-end;
+        display: grid;
+        grid-template-rows: repeat(4, 13vh);
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 2rem;
+    }
+}

@@ -1,0 +1,46 @@
+/* Colors */
+$color-primary: #2f01d5;
+$color-primary-dark: #320088;
+
+$color-secondary: #1b7a3b;
+
+$color-tertiary: #e6f3fb;
+
+$color-grey-light: #f5f5f5;
+$color-grey-dark: #a5a5a5;
+
+$color-light: #fff;
+$color-dark: #3a3a3a;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+    scroll-behavior: smooth;    
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.wave {
+    grid-column: full-start / full-end;
+    width: 100%;
+
+    &__down {
+        bottom: 0;
+        margin-top: 5rem;
+    }
+}
