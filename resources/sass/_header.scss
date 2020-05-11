@@ -5,26 +5,31 @@
     &__text {
         grid-column: center-start / col-end 4;
         display: grid;
-        grid-template-rows: 55% repeat(2, 1fr);
+        grid-template-rows: 55% 1fr;
         align-items: flex-end;
     }
     &__btn {
         align-self: center;
         font-weight: 700;
     }
-    &__social {
-        align-self: center;
-        transition: all .2s;
-    }
 
     &__img {
-        margin: 6% 0;
+        margin: 4% 0;
         grid-column: col-start 5 / center-end;
         align-self: center;
+        object-fit: cover;
 
-        img {
-            width: 100%;
-            height: 100%;
-        }
+        // img {
+        //     width: 100%;
+        //     height: 100%;
+        // }
+    }
+
+    &__social {
+        grid-column: center-start / center-end;
+        display: flex;
+        justify-content: center;
+        transition: all .2s;
+        margin: 0 1rem;
     }
 }
