@@ -12,41 +12,95 @@
         margin: 8rem 0 10rem 0;
         grid-column: center-start / center-end;
         
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(4, 10vh);
-        grid-gap: 3rem;
-        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+
+        &--item {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 45rem;
+        }
     }
-    &__item {      
+    
+    &__item {
+        display: flex;
+        align-items: flex-end;
+        justify-items: flex-end;
+        position: relative;
+        border-radius: 1.5rem;
+        overflow: hidden;
+
+
+
         img {
             height: 100%;
             width: 100%;
             object-fit: cover;
-            display: block;
+            position: relative;
 
             border-radius: 1.5rem;
-        }
+            display: block;
+        }   
+        
+        
 
         &--1 {
-            grid-row: 1 / span 4;
-            grid-column: 1 / span 4;
+            height: 100%;
+            width: 100%;
         }
         &--2 {
-            grid-row: 1 / span 2;
-            grid-column: 5 / span 2;
+            width: 50%;
+            height: 50%;
         }
         &--3 {
-            grid-row: 1 / span 2;
-            grid-column: 7 / span 2;
+            width: 50%;
+            height: 50%;
+
         }
         &--4 {
-            grid-row: 3 / span 2;
-            grid-column: 5 / span 2;
+            width: 50%;
+            height: 50%;
+
         }
         &--5 {
-            grid-row: 3 / span 2;
-            grid-column: 7 / span 2;
+            width: 50%;
+            height: 50%;
+
+        }
+
+        &--link {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .info {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.32s ease-out;
+            z-index: 2;
+
+            background-color: rgba($color-primary, .3);
+            border-top-left-radius: 100%;
+            padding: .8rem 0 0 .8rem;
+            overflow: hidden;
+
+            height: 6rem;
+            width: 6rem;
+    
+            svg {
+                height: 2.5rem;
+                width: 2.5rem;
+                position: relative;
+            }
         }
     }
 }
