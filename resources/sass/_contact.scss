@@ -1,0 +1,10 @@
+.contact {
+    background-color: $color-grey-light;
+    margin-bottom: 13rem 0;
+
+    &__title {
+        grid-column: center-start / center-end;
+        margin: 13rem 0 7rem 0;
+        position: relative;
+    }
+}

@@ -1,24 +1,27 @@
 .projects {
     grid-column: center-start / center-end;
     background-color: $color-light;
+    margin-bottom: 13rem;
 
     &__title {
         grid-column: center-start / center-end;
-        margin-top: 10rem;
+        margin: 13rem 0 7rem 0;
         position: relative;
     }
 
     &__content {
-        margin: 8rem 0 10rem 0;
         grid-column: center-start / center-end;
         
         display: flex;
-        flex-wrap: wrap;
+        clear: both;
+        content: "";
 
         &--item {
             width: 50%;
             display: flex;
             flex-wrap: wrap;
+            float: left;
+            
             height: 45rem;
         }
     }
@@ -31,7 +34,7 @@
         border-radius: 1.5rem;
         overflow: hidden;
 
-
+        padding: 2.5rem 0 0 2.5rem;
 
         img {
             height: 100%;
@@ -48,23 +51,24 @@
         &--1 {
             height: 100%;
             width: 100%;
+            margin-bottom: 0;
         }
         &--2 {
-            width: 50%;
+            width: 45%;
             height: 50%;
         }
         &--3 {
-            width: 50%;
+            width: 45%;
             height: 50%;
 
         }
         &--4 {
-            width: 50%;
+            width: 45%;
             height: 50%;
 
         }
         &--5 {
-            width: 50%;
+            width: 45%;
             height: 50%;
 
         }
@@ -85,7 +89,7 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            transition: all 0.32s ease-out;
+            transition: all 0.4s ease-out;
             z-index: 2;
 
             background-color: rgba($color-primary, .3);
@@ -95,12 +99,30 @@
 
             height: 6rem;
             width: 6rem;
-    
+
+            &__title {
+                display: none;
+            }
             svg {
                 height: 2.5rem;
                 width: 2.5rem;
                 position: relative;
             }
         }
+    }
+    &__item:hover, &__item:active {
+        .info {
+            border-top-left-radius: 70%;
+            padding: .8rem 0 0 .8rem;
+            overflow: hidden;
+
+            height: 100%;
+            width: 100%;
+            transition: all 0.4s ease-out;
+
+            &__title {
+                display: block;
+            }
+        }     
     }
 }
