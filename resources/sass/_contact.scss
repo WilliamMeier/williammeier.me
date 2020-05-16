@@ -1,10 +1,17 @@
 .contact {
     background-color: $color-grey-light;
-    margin-bottom: 13rem 0;
 
-    &__title {
-        grid-column: center-start / center-end;
-        margin: 13rem 0 7rem 0;
-        position: relative;
+    &__info {
+        grid-column: full-start / col-end 3;
+        background-color: $color-primary;
+        margin: 12rem 0 11rem 12rem;
+        
+        &--title {
+            padding: 5rem 9rem;
+
+            .heading-3 {
+                font-weight: 700;
+            }
+        }
     }
 }
