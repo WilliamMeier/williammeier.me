@@ -37,8 +37,7 @@
         }
     }
     &__box:hover, &__hover:active {
-        transform: scale(1.03);
-        box-shadow: 0 .3rem .6rem #d3d3d3;
+        box-shadow: 0 .5rem .9rem #d3d3d3;
         transition: all .2s ease;
     }
 }

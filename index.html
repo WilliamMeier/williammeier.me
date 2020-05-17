@@ -19,20 +19,20 @@
             <img src="resources/img/logo.png" alt="Logo do site">
         </a>
         <ul class="nav">
-            <li class="nav__item">
-                <a href="#header" class="nav__link nav__border">Início</a>
+            <li class="nav-item">
+                <a href="#header" class="nav-item__link nav-item__border">Início</a>
             </li>
-            <li class="nav__item">
-                <a href="#about" class="nav__link nav__border">Sobre</a>
+            <li class="nav-item">
+                <a href="#about" class="nav-item__link nav-item__border">Sobre</a>
             </li>
-            <li class="nav__item">
-                <a href="#services" class="nav__link nav__border">Serviços</a>
+            <li class="nav-item">
+                <a href="#services" class="nav-item__link nav-item__border">Serviços</a>
             </li>
-            <li class="nav__item">
-                <a href="#projects" class="nav__link nav__border">Projetos</a>
+            <li class="nav-item">
+                <a href="#projects" class="nav-item__link nav-item__border">Projetos</a>
             </li>
-            <li class="nav__item">
-                <a href="#contact" class="nav__link">Contato</a>
+            <li class="nav-item">
+                <a href="#contact" class="nav-item__link">Contato</a>
             </li>
         </ul>
     </nav>
@@ -50,12 +50,9 @@
             </div>
         </div>
 
-        <video class="header__img" autoplay>
-            <source src="/resources/video/web.mp4" type="video/mp4">
-        </video>
-        <!-- <figure class="header__img">
+        <figure class="header__img">
             <img src="/resources/img/hero.png" alt="Imagem hero do site">
-        </figure> -->
+        </figure>
 
         <!-- Social Icons -->
         <div class="header__social">
@@ -93,7 +90,7 @@
 
     <!-- Section about -->
     <section class="about container" id="about">
-        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e6f3fb" fill-opacity="1" d="M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,74.7C840,64,960,96,1080,106.7C1200,117,1320,107,1380,101.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,74.7C840,64,960,96,1080,106.7C1200,117,1320,107,1380,101.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
         <div class="about__bio">
             <figure class="about__bio--img">
                 <img src="/resources/img/me.jpg" alt="Minha foto pessoal">
@@ -296,15 +293,82 @@
         <div class="contact__info">
             <div class="contact__info--title">
                 <h3 class="heading-3 color-light">Contate-me</h3>
-                <h4 class="heading-4 mt-4">Você pode solicitar um orçamento dos meus serviços ou simplesmente conversar comigo.</h4>
+                <h5 class="heading-5 color-light mt-3">Você pode solicitar um orçamento dos meus serviços ou simplesmente conversar comigo.</h5>
             </div>
-            <svg>
-                <use xlink:href="resources/img/sprite.svg#envelope"></use>
-            </svg>
+            <div class="mt-4">
+                <div class="contact__info--item">
+                    <svg>
+                        <use xlink:href="resources/img/sprite.svg#map-marker-alt"></use>
+                    </svg>
+                    <a href="">L. Ervalzinho, São João do Oeste, SC</a>
+                </div>
+
+                <div class="contact__info--item">
+                    <svg>
+                        <use xlink:href="resources/img/sprite.svg#envelope"></use>
+                    </svg>
+                    <a href="">william.meier@outlook.com</a>
+                </div>
+
+                <div class="contact__info--item">
+                    <svg>
+                        <use xlink:href="resources/img/sprite.svg#envelope"></use>
+                    </svg>
+                    <a href="">william.meier01@gmail.com</a>
+                </div>
+
+                <div class="contact__info--item">
+                    <svg>
+                        <use xlink:href="resources/img/sprite.svg#mobile-alt"></use>
+                    </svg>
+                    <a href="">+55 (49) 99923 5930</a>
+                </div>
+
+                <div class="contact__info--dm">
+                    <a href="https://api.whatsapp.com/send?phone=5549999235930" target="_blank" rel="noreferrer noopener">
+                        <svg>
+                            <use xlink:href="resources/img/sprite.svg#whatsapp"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://t.me/WilliamMeier" target="_blank" rel="noreferrer noopener">
+                        <svg>
+                            <use xlink:href="resources/img/sprite.svg#telegram-plane"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.messenger.com/t/williammeier01" target="_blank" rel="noreferrer noopener">
+                        <svg>
+                            <use xlink:href="resources/img/sprite.svg#facebook-messenger"></use>
+                        </svg>
+                    </a>
+
+                    <a href="https://join.skype.com/invite/woKK7NcnjL8h" target="_blank" rel="noreferrer noopener">
+                        <svg>
+                            <use xlink:href="resources/img/sprite.svg#skype"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="contact__form">
-            
+            <div class="contact__form--title">
+                <h3 class="heading-3">Envie sua mensagem</h3>
+            </div>
+            <div class="contact__form--group mt-3">
+                <input type="text" class="contact__form--control" id="name" placeholder="Nome completo">
+            </div>
+
+            <div class="contact__form--group">
+                <input type="email" class="contact__form--control" id="email" placeholder="Endereço de email">
+            </div>
+
+            <div class="contact__form--group">
+                <textarea name="" id="message" rows="6" class="contact__form--control" placeholder="Escreva a sua mensagem"></textarea>
+            </div>
+
+            <input type="button" id="sendEmail" class="btn btn__send mt-4" value="Enviar">
         </div>
     </section>
 

@@ -1,13 +1,17 @@
 .navbar {
-    background-color: rgba($color-tertiary, .7);
+    background-color: transparent;
     height: 10rem;
     top: 0;
     z-index: 100;
+    
+    position: absolute;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    width: 100%;
 
     transition: all .2s ease-in;
 
@@ -25,56 +29,58 @@
 
         transition: all .2s ease-in;
 
-        &__item {
+        .nav-item {
             padding: 0 3rem;
+
+            &__link:link, &__link:visited {
+                text-decoration: none;
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $color-light;
+                padding-bottom: .7rem;
+            }
+            &__link:hover, &__link:active {
+                border-bottom: 2px solid $color-primary;
+            }
+            &__border {
+                border: none;
+                position: relative;
+            }
+            &__border:hover, &__border:active {
+                border: none;
+            }
+            &__border::after {
+                content: '';
+                position: absolute;
+                width: 0px;
+                height: 2px;
+                left: 50%;
+                bottom:0;
+                background-color: $color-light;
+                transition: all ease-in-out .3s;
+            }
+            &__border:hover::after {
+                width: 100%;
+                left: 0;
+            }
         }
-        &__item:last-child {
+        .nav-item:last-child {
 
             a:link, a:visited {
-                border: 1px solid $color-secondary;
+                border: 1px solid $color-light;
                 border-radius: 10rem;
 
-                color: $color-secondary;
+                color: $color-light;
                 padding: .8rem 4.5rem;
             }
             a:hover, a:active {
                 background-color: $color-secondary;
-                color: $color-grey-light;
+                color: $color-light;
                 transition: all .3s ease-in;
+                border: 1px solid $color-secondary;
             }
-        }
-        &__link:link, &__link:visited {
-            text-decoration: none;
-            font-size: 1.7rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: $color-primary;
-            padding-bottom: .7rem;
-        }
-        &__link:hover, &__link:active {
-            border-bottom: 2px solid $color-primary;
-        }
-        &__border {
-            border: none;
-            position: relative;
-        }
-        &__border:hover, &__border:active {
-            border: none;
-        }
-        &__border::after {
-            content: '';
-            position: absolute;
-            width: 0px;
-            height: 2px;
-            left: 50%;
-            bottom:0;
-            background-color: $color-primary;
-            transition: all ease-in-out .3s;
-        }
-        &__border:hover::after {
-            width: 100%;
-            left: 0;
-        }
+        } 
     }
 }
 
@@ -92,6 +98,44 @@
         img {
             height: 6rem;
             margin-left: 15rem;
+        }
+    }
+
+    .nav-item {
+        padding: 0 3rem;
+
+        &__link:link, &__link:visited {
+            color: $color-primary !important;
+        }
+        &__link:hover, &__link:active {
+            border-bottom: 2px solid $color-primary;
+        }
+        &__border {
+            border: none;
+            position: relative;
+        }
+        &__border:hover, &__border:active {
+            border: none;
+        }
+        &__border::after {
+            background-color: $color-primary !important;
+            transition: all ease-in-out .3s;
+        }
+    }
+    .nav-item:last-child {
+
+        a:link, a:visited {
+            border: 1px solid $color-secondary !important;
+            border-radius: 10rem;
+
+            color: $color-secondary !important;
+            padding: .8rem 4.5rem;
+        }
+        a:hover, a:active {
+            background-color: $color-secondary;
+            color: $color-light !important;
+            transition: all .3s ease-in;
+            border: 1px solid $color-secondary !important;
         }
     }
 }

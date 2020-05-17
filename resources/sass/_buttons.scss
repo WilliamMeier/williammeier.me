@@ -5,6 +5,7 @@
     letter-spacing: .15rem;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 
     transition: all .3s;
 
@@ -24,6 +25,13 @@
         border: .1rem solid $color-primary-dark;
         background-color: $color-primary-dark;
         color: $color-light;
+    }
+
+    &__send:link, &__send:active {
+        background-color: linear-gradient(rgba($color-primary, 0.3), rgba($color-primary, 7)) !important;
+        border: none;
+        color: color-light !important;
+        font-weight: 700;
     }
 }
 
