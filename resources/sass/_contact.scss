@@ -1,15 +1,14 @@
 .contact {
     background-image: linear-gradient(rgba($color-grey-light, 0.7), rgba($color-grey-light, 7)), url(/resources/css/img/contact.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    // background-attachment: fixed;
 
     &__info {
-        grid-column: full-start / col-end 3;
+        grid-column: center-start / col-end 4;
         background-color: rgba($color-primary, .7);
-        margin: 12rem 0 11rem 12rem;
-        padding: 5rem 9rem;
+        margin: 12rem 10rem 12rem 0;
+        padding: 7rem;
 
-        border-radius: 2px;
         box-shadow: 0 1rem 2rem rgba($color-dark, .1);
         
         &--title {
@@ -37,6 +36,9 @@
                 font-size: 1.8rem;
                 text-decoration: none;
             }
+            a:hover, a:active {
+                text-decoration: underline;
+            }
         }
         &--dm {
             display: flex;
@@ -45,8 +47,8 @@
             margin-top: 5rem;
 
             svg {
-                height: 2.5rem;
-                width: 2.5rem;
+                height: 2.2rem;
+                width: 2.2rem;
                 z-index: 100;
                 display: block;
             }
@@ -75,9 +77,9 @@
     }
 
     &__form {
-        grid-column: col-start 4 / full-end;
-        margin: 12rem 12rem 11rem 10rem;
-        padding: 5rem 9rem;
+        grid-column: col-start 5 / center-end;
+        margin: 12rem 0 12rem 5rem;
+        padding: 7rem 0;
         
         &--title {
             .heading-3 {

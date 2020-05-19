@@ -7,7 +7,7 @@
     text-transform: uppercase;
     cursor: pointer;
 
-    transition: all .3s;
+    transition: all .3s ease-in-out;
 
     &__contact:link, &__contact:visited {
         margin-right: 2.2rem;
@@ -27,11 +27,16 @@
         color: $color-light;
     }
 
-    &__send:link, &__send:active {
-        background-color: linear-gradient(rgba($color-primary, 0.3), rgba($color-primary, 7)) !important;
-        border: none;
-        color: color-light !important;
+    &__send {
+        color: $color-primary;
+        background-color: $color-light;
+        border: 1px solid $color-primary;
         font-weight: 700;
+    }
+    &__send:hover, &__send:active {
+        background-color: $color-primary;
+        color: $color-light;
+        border: 1px solid $color-primary;
     }
 }
 
