@@ -1,0 +1,16 @@
+.js {
+    &__about, &__services--down, &__services--up, &__projects--left, &__projects--right {
+        opacity: 0;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;        
+    }
+
+    &__animated {
+        opacity: 1 !important;
+    }
+
+    &__contact {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s; 
+    }
+}

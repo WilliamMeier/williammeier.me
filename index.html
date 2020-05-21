@@ -7,15 +7,23 @@
     <meta name="description" content="Olá! Meu nome é William Meier, sou Desenvolvedor Web Front-End...">
     
     <link rel="stylesheet" type="text/css" href="resources/css/main.css">
-    <link rel="stylesheet" type="text/css" href="vendor/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" type="image/png" href="resources/img/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <title>William Meier | Dev Front-End</title>
 </head>
 <body>
     <nav class="navbar">
-        <a href="#" class="logo">
+        <a href="#header" class="logo">
             <img src="resources/img/logo.png" alt="Logo do site">
         </a>
         <ul class="nav">
@@ -91,7 +99,7 @@
     <!-- Section about -->
     <section class="about container" id="about">
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L60,85.3C120,107,240,149,360,144C480,139,600,85,720,74.7C840,64,960,96,1080,106.7C1200,117,1320,107,1380,101.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-        <div class="about__bio">
+        <div class="about__bio js__about">
             <figure class="about__bio--img">
                 <img src="/resources/img/me.jpg" alt="Minha foto pessoal">
             </figure>
@@ -102,7 +110,7 @@
             </div>
         </div>
 
-        <div class="about__text">
+        <div class="about__text js__about">
             <div class="">
                 <p class="color-light">Para começar me apresentando, sou desenvolvedor front-end além de estusiasta de economia e esportes nas horas vagas. 
                     Sou apaixonado por tecnologia há muito tempo, porém nesse período demorei para encontrar os meus objetivos. 
@@ -164,7 +172,7 @@
         <h2 class="services__title heading-2">Serviços</h2>
 
         <div class="services__content">
-            <div class="services__box">
+            <div class="services__box js__services--down">
                 <div class="services__box--icon">
                     <img src="/resources/img/code.svg" alt="Icon Código">
                 </div>
@@ -174,7 +182,7 @@
                 </div>
             </div>
 
-            <div class="services__box">
+            <div class="services__box js__services--down">
                 <div class="services__box--icon">
                     <img src="/resources/img/mobile.svg" alt="Icone Mobile">
                 </div>
@@ -184,7 +192,7 @@
                 </div>
             </div>
 
-            <div class="services__box">
+            <div class="services__box js__services--down">
                 <div class="services__box--icon">
                     <img src="/resources/img/design.svg" alt="Icone Design">
                 </div>
@@ -194,7 +202,7 @@
                 </div>
             </div>
 
-            <div class="services__box">
+            <div class="services__box js__services--up">
                 <div class="services__box--icon">
                     <img src="/resources/img/ads.svg" alt="Google ADS">
                 </div>
@@ -204,7 +212,7 @@
                 </div>
             </div>
 
-            <div class="services__box">
+            <div class="services__box js__services--up">
                 <div class="services__box--icon">
                     <img src="/resources/img/analitics.svg" alt="Google Analytics">
                 </div>
@@ -220,7 +228,7 @@
     <section class="projects container" id="projects">
         <h2 class="projects__title heading-2">Projetos</h2>
         <div class="projects__content">
-            <div class="projects__content--item">
+            <div class="projects__content--item js__projects--left">
                 <article class="projects__item projects__item--1">
                     <a href="" class="projects__item--link">
                         <img src="/resources/img/williamdev.png" alt="Meu antigo site institucional">
@@ -234,7 +242,7 @@
                     </a>
                 </article>
             </div>
-            <div class="projects__content--item">
+            <div class="projects__content--item js__projects--right">
                 <article class="projects__item projects__item--2">
                     <a href="" class="projects__item--link">
                         <img src="/resources/img/nossoingresso.jpg" alt="Meu antigo site institucional">
@@ -353,7 +361,7 @@
             </div>
         </div>
 
-        <div class="contact__form">
+        <div class="contact__form js__contact">
             <div class="contact__form--title">
                 <h3 class="heading-3">Envie sua mensagem</h3>
             </div>
