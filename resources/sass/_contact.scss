@@ -10,6 +10,19 @@
         padding: 7rem;
 
         box-shadow: 0 1rem 2rem rgba($color-dark, .1);
+
+        @media only screen and (max-width: $bp-smmedium) {
+            grid-column: center-start / col-end 3;
+            padding: 7rem 5rem;
+            margin: 12rem 0 12rem 0;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column: full-start / full-end;
+            order: 2;
+            margin: 0;
+            padding: 7rem 20rem;
+        }
         
         &--title {
             .heading-3 {
@@ -80,6 +93,19 @@
         grid-column: col-start 5 / center-end;
         margin: 12rem 0 12rem 5rem;
         padding: 7rem 0;
+
+        @media only screen and (max-width: $bp-large) {
+            margin: 12rem 0 12rem 3rem;
+        }
+        @media only screen and (max-width: $bp-smmedium) {
+            margin: 12rem 0 12rem 7rem;
+            grid-column: col-start 4 / center-end;
+        }
+        @media only screen and (max-width: $bp-small) {
+            grid-column: center-start / center-end;
+            order: 1;
+            margin: 5rem 10rem 0 10rem;
+        }
         
         &--title {
             .heading-3 {

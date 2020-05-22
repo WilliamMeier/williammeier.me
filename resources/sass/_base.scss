@@ -11,6 +11,14 @@ $color-grey-dark: #858585;
 $color-light: #fff;
 $color-dark: #3a3a3a;
 
+// Responsive Breakpoints
+$bp-ultralarge: 121em; // more than 1920 - 1080p
+$bp-largerest: 100em; // 1600px
+$bp-large: 85.38em; // 1366px
+$bp-medium: 69.37em; // 1110px
+$bp-smmedium: 62.5em; //1000px
+$bp-small: 56.25em; //900px
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -20,7 +28,20 @@ $color-dark: #3a3a3a;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;
+
+    @media only screen and (min-width: $bp-ultralarge) {
+        font-size: 87%;
+    }
+    @media only screen and (max-width: $bp-largerest) {
+        font-size: 59%;
+    }
+    @media only screen and (max-width: $bp-large) {
+        font-size: 55%;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;
+    }
 }
 
 body, textarea, input {

@@ -45,3 +45,12 @@
 .mt-5 {
     margin-top: 1rem;
 }
+
+@media only screen and (max-width: $bp-large) {
+    .heading-1 {
+        font-size: 5rem;
+        span {
+            font-size: 4.3rem;
+        }
+    }
+}

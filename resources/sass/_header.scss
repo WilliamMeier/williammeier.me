@@ -8,6 +8,19 @@
         display: grid;
         grid-template-rows: 55% 20%;
         align-items: flex-end;
+
+        @media only screen and (max-width: $bp-large) {
+            grid-template-rows: 60% 20%;
+            padding-left: 4rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-rows: 60% 20%;
+            padding-left: 0;
+        }
+        @media only screen and (max-width: $bp-small) {
+            grid-column: center-start / center-end;
+            order: 2;
+        }
     }
     &__btn {
         align-self: center;
@@ -19,6 +32,12 @@
         align-self: center;
         object-fit: cover;
         margin-top: -5rem;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column: center-start / full-end;
+            order: 1;
+            margin-top: -10rem;
+        }
 
         img {
             height: 100%;
@@ -32,5 +51,6 @@
         justify-content: center;
         transition: all .2s;
         margin: 4rem 1rem -2rem 1rem;
+        order: 3;
     }
 }

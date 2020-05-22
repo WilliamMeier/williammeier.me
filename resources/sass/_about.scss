@@ -7,8 +7,6 @@
     background-size: cover;
     background-attachment: fixed;
 
-    
-
     &__bio {
         grid-column: center-start / col-end 3;
         justify-self: center;
@@ -19,6 +17,10 @@
         padding: 7rem;
         border-radius: .2rem;
         overflow: hidden;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column: center-start / center-end;
+        }
 
         &::after {
             content: '';;
@@ -60,11 +62,25 @@
         p {
             margin-bottom: 1rem;
         }
+
+        @media only screen and (max-width: $bp-smmedium) {
+            padding-left: 6rem;
+            padding-right: 0rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            grid-column: center-start / center-end;
+            margin: 5rem 0;
+            padding: 0 7rem;
+        }
     }
 
     &__skills {
         margin-top: 5rem;
         font-weight: 700;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 0;
+        }
 
         &--name {
             display: flex;

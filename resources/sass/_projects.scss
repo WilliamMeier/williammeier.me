@@ -16,6 +16,11 @@
         clear: both;
         content: "";
 
+        @media only screen and (max-width: $bp-small) {
+            flex-wrap: wrap;
+            margin: 0 10rem;
+        }
+
         &--item {
             width: 50%;
             display: flex;
@@ -23,6 +28,10 @@
             float: left;
             
             height: 45rem;
+
+            @media only screen and (max-width: $bp-small) {
+                width: 100%;
+            }
         }
     }
     
@@ -35,7 +44,6 @@
 
         box-shadow: 0 .5rem 0 $color-grey-light;
 
-
         img {
             height: 100%;
             width: 100%;
@@ -44,7 +52,6 @@
 
             display: block;
         }   
-        
         
 
         &--1 {
