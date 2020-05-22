@@ -23,6 +23,12 @@
             margin: 0;
             padding: 7rem 20rem;
         }
+        @media only screen and (max-width: $bp-mdsmall) {
+            padding: 7rem 10rem;
+        }
+        @media only screen and (max-width: $bp-exsmall) {
+            padding: 7rem 7rem;
+        }
         
         &--title {
             .heading-3 {
@@ -105,6 +111,12 @@
             grid-column: center-start / center-end;
             order: 1;
             margin: 5rem 10rem 0 10rem;
+        }
+        @media only screen and (max-width: $bp-mdsmall) {
+            margin: 2rem 3rem 0 3rem;
+        }
+        @media only screen and (max-width: $bp-exsmall) {
+            margin: 2rem 0 0 0;
         }
         
         &--title {

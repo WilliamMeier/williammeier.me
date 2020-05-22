@@ -7,6 +7,13 @@
     text-transform: uppercase;
     cursor: pointer;
 
+    position: relative;
+    z-index: 1000;
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 1.5rem 3rem;
+    }
+
     transition: all .3s ease-in-out;
 
     &__contact:link, &__contact:visited {
@@ -17,7 +24,7 @@
     }
     &__more:link, &__more:visited {
         border: .1rem solid $color-primary;
-        background-color: transparent;
+        background-color: $color-light;
         color: $color-primary;
     }
 
@@ -57,6 +64,11 @@
         width: 2.2rem;
         display: block;
         fill: $color-primary;
+
+        @media only screen and (max-width: $bp-small) {
+            height: 1.8rem;
+            width: 1.8rem;
+        }
     }
 
     &:hover, &:active {

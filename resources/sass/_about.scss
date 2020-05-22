@@ -20,6 +20,7 @@
 
         @media only screen and (max-width: $bp-small) {
             grid-column: center-start / center-end;
+            margin-top: 0;
         }
 
         &::after {
@@ -43,8 +44,16 @@
                 height: 25rem;
                 border: .9rem solid $color-grey-light;
                 border-radius: 50%;
+
+                @media only screen and (max-width: $bp-mdsmall) {
+                    height: 20rem;
+                }
+                @media only screen and (max-width: $bp-exsmall) {
+                    height: 15rem;
+                }
             }
         }
+
     }
     &__text {
         grid-column: col-start 4 / center-end;
@@ -71,6 +80,13 @@
             grid-column: center-start / center-end;
             margin: 5rem 0;
             padding: 0 7rem;
+        }
+        @media only screen and (max-width: $bp-mdsmall) {
+            margin: 2rem 0;
+            padding: 3rem;
+        }
+        @media only screen and (max-width: $bp-exsmall) {
+            padding: 0;
         }
     }
 
