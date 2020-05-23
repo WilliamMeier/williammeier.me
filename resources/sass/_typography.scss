@@ -11,12 +11,12 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-        font-size: 4rem;
-        color: $color-grey-light;
-        text-shadow: 2px 2px $color-primary;
+        font-size: 3.5rem;
+        line-height: 1.1;
+        // color: $color-grey-light;
+        // text-shadow: 2px 2px $color-primary;
         span {
-            font-size: 3.5rem;
-            text-shadow: none;
+            font-size: 3rem;
         }
     }
 }

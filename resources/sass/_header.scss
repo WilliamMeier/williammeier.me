@@ -20,16 +20,11 @@
         }
         @media only screen and (max-width: $bp-small) {
             grid-column: center-start / center-end;
-            grid-template-rows: 50% 25%;
-            margin-top: -85%;
+            grid-template-rows: 50% 35%;
+
             order: 2;
-        }
-        @media only screen and (max-width: $bp-mdsmall) {
-            grid-template-rows: 50% 30%;
-        }
-        @media only screen and (max-width: $bp-exsmall) {
-            height: 40vh;
-            padding-bottom: 50%;
+            height: 30vh;
+            margin-top: 5rem;
         }
     }
     &__btn {
@@ -46,9 +41,11 @@
         @media only screen and (max-width: $bp-small) {
             grid-column: full-start / full-end;
             order: 1;
+
+            padding-left: 5rem;
         }
-        @media only screen and (max-width: $bp-exsmall) {
-            height: 70vh;
+        @media only screen and (max-width: $bp-mdsmall) {
+           padding-left: 0;
         }
 
         img {
@@ -64,6 +61,6 @@
         transition: all .2s;
         margin: 4rem 1rem -2rem 1rem;
         order: 3;
-        margin: 5rem 0 0em 0;
+        margin: 0;
     }
 }
