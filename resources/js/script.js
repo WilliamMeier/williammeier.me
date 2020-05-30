@@ -5,6 +5,12 @@ $(document).ready(function() {
         $nav.toggleClass("stick", $(this).scrollTop() >= $nav.height());
     });
 
+// Collapse Navbar
+$('.nav__btn').click(function(){
+    $('.nav__item').toggleClass("show");
+    $('ul li').toggleClass("hide");
+  });
+
     /* Navigation scroll */
     $('a[href*=\\#]:not([href=\\#])').on('click', function() {
         var target = $(this.hash);

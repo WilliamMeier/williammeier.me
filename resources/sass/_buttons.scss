@@ -8,7 +8,7 @@
     cursor: pointer;
 
     position: relative;
-    z-index: 1000;
+    z-index: 3;
 
     @media only screen and (max-width: $bp-small) {
         padding: 1.5rem 3rem;

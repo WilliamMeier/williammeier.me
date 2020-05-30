@@ -36,12 +36,13 @@
         grid-column: col-start 4 / full-end;
         align-self: center;
         object-fit: cover;
-        margin-top: -5rem;
+        margin-top: -2rem;
 
         @media only screen and (max-width: $bp-small) {
             grid-column: full-start / full-end;
             order: 1;
 
+            margin-top: 0;
             padding-left: 5rem;
         }
         @media only screen and (max-width: $bp-mdsmall) {
