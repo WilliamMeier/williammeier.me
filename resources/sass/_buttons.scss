@@ -16,6 +16,11 @@
 
     transition: all .3s ease-in-out;
 
+    &__contact:link, &__contact:visited, &__more:link, &__more:visited {
+        @media only screen and (max-width: $bp-exsmall) {
+            margin: .5rem !important;
+        }
+    }
     &__contact:link, &__contact:visited {
         margin-right: 2.2rem;
         border: .1rem solid $color-primary;
