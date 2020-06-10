@@ -17,6 +17,13 @@
             font-size: 3.7rem !important;
         }
     }
+    @media only screen and (max-width: $bp-exsmall) {
+        font-size: 3.7rem !important;
+        line-height: 1.1;
+        span {
+            font-size: 3.5rem !important;
+        }
+    }
 }
 .heading-2 {
     color: $color-dark;

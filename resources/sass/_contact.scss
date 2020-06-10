@@ -9,6 +9,8 @@
         margin: 12rem 10rem 12rem 0;
         padding: 7rem;
 
+        height: 58rem;
+
         box-shadow: 0 1rem 2rem rgba($color-dark, .1);
 
         @media only screen and (max-width: $bp-smmedium) {
@@ -19,7 +21,7 @@
 
         @media only screen and (max-width: $bp-small) {
             grid-column: full-start / full-end;
-            order: 2;
+            order: 1;
             margin: 0;
             padding: 7rem 20rem;
         }
@@ -95,70 +97,98 @@
         }
     }
 
-    &__form {
+    &__location {
         grid-column: col-start 5 / center-end;
-        margin: 12rem 0 12rem 5rem;
-        padding: 7rem 0;
+        margin: 12rem 5rem 12rem 0rem;
+        width: 100%;
+
+        iframe {
+            height: 58rem;
+        }
 
         @media only screen and (max-width: $bp-large) {
-            margin: 12rem 0 12rem 3rem;
+            margin: 12rem 5rem 12rem 0rem;
         }
         @media only screen and (max-width: $bp-smmedium) {
-            margin: 12rem 0 12rem 7rem;
+            margin: 12rem 5rem 12rem 4rem;
             grid-column: col-start 4 / center-end;
         }
         @media only screen and (max-width: $bp-small) {
-            grid-column: center-start / center-end;
-            order: 1;
-            margin: 5rem 10rem 0 10rem;
-        }
-        @media only screen and (max-width: $bp-mdsmall) {
-            margin: 2rem 3rem 0 3rem;
-        }
-        @media only screen and (max-width: $bp-exsmall) {
-            margin: 2rem 0 0 0;
-        }
-        
-        &--title {
-            .heading-3 {
-                font-weight: 700;
-            }
-            .heading-5 {
-                text-align: left;
-            }
-        }
-        
-        &--control {
-            margin: 2rem 0;
-            font-size: 1.5rem;
-            padding: 1.5rem 2rem;
-            border-radius: 2rem;
-            color: $color-grey-dark;
-            letter-spacing: .1rem;
-            background-color: $color-light;
-            border: none;
-            width: 100%;
-            display: block;
-            transition: all .3s;
-    
-            &:focus {
-                outline: none;
-                box-shadow: 0 1rem 2rem rgba($color-dark, .1);
-            }
+            grid-column: full-start / full-end;
+            margin: 0;
+            padding: 0;
+            order: 2;
 
-            input, textarea {
-                font-size: 1.5rem;
-                color: $color-grey-dark;
-            }
-            input, textarea::-webkit-placeholder {
-                font-size: 1.5rem;
-                color: $color-grey-dark;
-            }
-            input, textarea::-moz-placeholder {
-                font-size: 1.5rem;
-                color: $color-grey-dark;
+            iframe {
+                height: 45rem;
             }
         }
     }
+
+    // &__form {
+    //     grid-column: col-start 5 / center-end;
+    //     margin: 12rem 0 12rem 5rem;
+    //     padding: 7rem 0;
+
+    //     @media only screen and (max-width: $bp-large) {
+    //         margin: 12rem 0 12rem 3rem;
+    //     }
+    //     @media only screen and (max-width: $bp-smmedium) {
+    //         margin: 12rem 0 12rem 7rem;
+    //         grid-column: col-start 4 / center-end;
+    //     }
+    //     @media only screen and (max-width: $bp-small) {
+    //         grid-column: center-start / center-end;
+    //         order: 1;
+    //         margin: 5rem 10rem 0 10rem;
+    //     }
+    //     @media only screen and (max-width: $bp-mdsmall) {
+    //         margin: 2rem 3rem 0 3rem;
+    //     }
+    //     @media only screen and (max-width: $bp-exsmall) {
+    //         margin: 2rem 0 0 0;
+    //     }
+        
+    //     &--title {
+    //         .heading-3 {
+    //             font-weight: 700;
+    //         }
+    //         .heading-5 {
+    //             text-align: left;
+    //         }
+    //     }
+        
+    //     &--control {
+    //         margin: 2rem 0;
+    //         font-size: 1.5rem;
+    //         padding: 1.5rem 2rem;
+    //         border-radius: 2rem;
+    //         color: $color-grey-dark;
+    //         letter-spacing: .1rem;
+    //         background-color: $color-light;
+    //         border: none;
+    //         width: 100%;
+    //         display: block;
+    //         transition: all .3s;
+    
+    //         &:focus {
+    //             outline: none;
+    //             box-shadow: 0 1rem 2rem rgba($color-dark, .1);
+    //         }
+
+    //         input, textarea {
+    //             font-size: 1.5rem;
+    //             color: $color-grey-dark;
+    //         }
+    //         input, textarea::-webkit-placeholder {
+    //             font-size: 1.5rem;
+    //             color: $color-grey-dark;
+    //         }
+    //         input, textarea::-moz-placeholder {
+    //             font-size: 1.5rem;
+    //             color: $color-grey-dark;
+    //         }
+    //     }
+    // }
 }
 

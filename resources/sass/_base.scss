@@ -31,7 +31,6 @@ $bp-exsmall: 31.25em; //500px
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    scroll-behavior: smooth;
 
     @media only screen and (min-width: $bp-ultralarge) {
         font-size: 87%;

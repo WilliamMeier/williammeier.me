@@ -30,12 +30,12 @@
         }
 
         @media only screen and (max-width: $bp-exsmall) {
-            grid-template-rows: 50% 45%;
+            grid-template-rows: 40% 40%;
             align-items: center;
 
             order: 2;
 
-            margin-bottom: 0;
+            margin-bottom: -2rem;
         }
     }
     &__btn {
@@ -52,6 +52,7 @@
         align-self: center;
         object-fit: cover;
         margin-top: -2rem;
+        overflow: hidden;
 
         margin-bottom: 3.5rem;
 

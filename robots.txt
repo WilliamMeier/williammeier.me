@@ -1,0 +1,11 @@
+user-agent: *
+Allow: /index.html
+Allow: /#header/
+Allow: /#about/
+Allow: /#services/
+Allow: /#projects/
+Allow: /#contact/
+Disallow: /_css/
+Disallow: /_sass/
+Disallow: /_img/
+Disallow: /_js/
