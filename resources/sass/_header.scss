@@ -1,8 +1,9 @@
 .header {
-    background-color: $color-light;
+    background-color: $color-grey-light;
     text-align: center;
     position: relative;
     overflow: hidden;
+    pointer-events: none;
 
     &__text {
         grid-column: full-start / col-end 3;
@@ -10,17 +11,19 @@
         grid-template-rows: 55% 20%;
         align-items: flex-end;
 
+        margin-left: 5rem;
+
         @media only screen and (max-width: $bp-large) {
             grid-template-rows: 60% 20%;
-            padding-left: 4rem;
+            margin-left: 4rem;
         }
         @media only screen and (max-width: $bp-medium) {
             grid-template-rows: 60% 30%;
-            padding-left: 0;
         }
         @media only screen and (max-width: $bp-small) {
             grid-column: center-start / center-end;
             grid-template-rows: 50% 20%;
+            margin-left: 0;
 
             order: 2;
             height: 30vh;
@@ -45,6 +48,8 @@
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
+
+        pointer-events: visible;
     }
 
     &__img {
