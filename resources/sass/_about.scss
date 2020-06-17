@@ -58,7 +58,7 @@
     &__text {
         grid-column: col-start 4 / center-end;
         padding: 0 8rem;
-        margin-top: -5rem;
+        margin-top: -1rem;
         
         text-align: left;
         font-size: 1.8rem;
@@ -92,32 +92,64 @@
     }
 
     &__skills {
-        margin-top: 5rem;
+        margin-top: 6rem;
         font-weight: 700;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
         @media only screen and (max-width: $bp-small) {
             margin-top: 0;
         }
 
-        &--name {
+        &--box {
+            margin-right: 2rem;
+            margin-top: 2rem;
             display: flex;
-            justify-content: space-between;
-        }
-        &--item {
-            width: 100%;
-            background-color: $color-grey-dark;
-            border-radius: 10rem;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2rem;
 
-            .progress-bar {
-                padding: .2rem 0;
-                position: relative;
-                background-color: $color-grey-light;
-                border-radius: 10rem;
+            // border: 1px solid $color-light;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            padding: 1rem 2rem;
+
+            
+            .icon-skills {
+                height: 4.5rem;
+                width: 4.5rem;
+                fill: $color-light;
+
             }
-            .html { width: 80%; }
-            .css { width: 75%; }
-            .sass { width: 75%; }
-            .js { width: 55%; }
+            .title {
+                margin-left: 1rem;
+            }
         }
+
+        // &--name {
+        //     display: flex;
+        //     justify-content: space-between;
+        // }
+        // &--item {
+        //     width: 100%;
+        //     background-color: $color-grey-dark;
+        //     border-radius: 10rem;
+
+        //     .progress-bar {
+        //         padding: .2rem 0;
+        //         position: relative;
+        //         background-color: $color-grey-light;
+        //         border-radius: 10rem;
+        //     }
+        //     .html { width: 80%; }
+        //     .css { width: 75%; }
+        //     .sass { width: 75%; }
+        //     .js { width: 55%; }
+        // }
     }
 }
